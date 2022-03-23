@@ -140,11 +140,7 @@ public class BikeTest {
     @Test
     public void testThatBikeCanDecelerateByGear3() {
         Bike bike = new Bike("yamaha",false,0);
-       // bike.setSpeed(35);
-        bike.setAccelerate(3);
-        bike.setAccelerate();
-        bike.setAccelerate();
-        bike.setDecelerate();
+        bike.setSpeed(35);
         bike.setDecelerate();
         assertEquals(32, bike.getSpeed());
 

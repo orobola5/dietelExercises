@@ -2,7 +2,9 @@ package tddClass;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Scanner;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class kataTest {
     @Test
@@ -102,8 +104,8 @@ public class kataTest {
         kata quotient = new kata();
         int number = quotient.number(12, 3);
         assertEquals(4, number);
-
     }
+
 
     @Test
     void whileLoop() {
@@ -117,7 +119,43 @@ public class kataTest {
             number = number + 1;
         }
     }
+
+    @Test
+    void evenOrOdd() {
+        kata evenOrOdd = new kata();
+        boolean Number = evenOrOdd.evenOrOdd(3);
+        assertFalse(Number);
+
+        boolean Number2 = evenOrOdd.evenOrOdd(2);
+        assertTrue(Number2);
+
+
+    }
+
+    @Test
+    void biggestNumber() {
+        kata biggestNumber = new kata();
+        int number = biggestNumber.biggestNumber(2, 4, 6, 8, 10);
+        assertEquals(10, number);
+    }
+
+    @Test
+    void factorCount() {
+        kata factorCount = new kata();
+        int number = factorCount.factorCount(49);
+        assertEquals(3, number);
+
+    }
+
+    @Test
+    public void primeNumber() {
+        kata primeNumber = new kata();
+        boolean number = primeNumber.primeNumber(11);
+        assertEquals(true, number);
+    }
 }
+
+
 
 
 
