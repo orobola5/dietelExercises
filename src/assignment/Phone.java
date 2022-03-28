@@ -39,14 +39,17 @@ public class Phone {
                         9->speed dials;
                         10->Voice tags;
                         default->invalid input;
-                                       
+                                        
                         """);
                 int option = input.nextInt();
-            case 8:
-                System.out.println("""
-                        1->Type of view
-                        2->Memory Status
-                        """);
+                switch (option) {
+                    case 8:
+                        System.out.println("""
+                                1->Type of view
+                                2->Memory Status
+                                """);
+                        break;
+                }
                 break;
         }
 
@@ -67,36 +70,45 @@ public class Phone {
                          """);
 
                 int messageSettings = input.nextInt();
-            case 7:
-                System.out.println("""
-                        1->Set1^2
-                        2->common^3
-                        
-                        """);
+                switch (messageSettings) {
+                    case 7:
+                        System.out.println("""
+                                1->Set1^2
+                                2->common^3
+                                                        
+                                """);
 
-                int set1function = input.nextInt();
-            case 1:
-                System.out.println("""
-                         1->Message centre number
-                         2-> Message sent as 
-                         3-> Message Validity
-                  
-                        """);
-                int common3Function = input.nextInt();
-                String common3function = switch (common3Function) {
-                    System.out.println("""
-                           case 1->Delivery
-                           case 2->Reply via same centre
-                           case 3->Character support
-                                                    
-                            """);
+                        int set1 = input.nextInt();
+                        switch (set1) {
+                            case 1:
+                                System.out.println("""
+                                         1->Message centre number
+                                         2-> Message sent as 
+                                         3-> Message Validity
+                                           
+                                        """);
+                                break;
+                        }
+                                int common = input.nextInt();
+                            switch (common) {
+                                case 2:
+                                    System.out.println("""
+                                            case 1->Delivery Report
+                                            case 2->Reply via same centre
+                                            case 3->Character support
+                                                                     
+                                             """);
+                            }    break;
 
-                    break
-                };
+                }
+                break;
+        }
 
         switch (nokia3310) {
             case 3:
-                System.out.println("chat");
+                System.out.println("""
+                        Chat
+                        """);
                 break;
         }
         switch (nokia3310) {
@@ -113,31 +125,43 @@ public class Phone {
                                             
                           """);
                 int showCallDuration = input.nextInt();
-            case 5:
-                System.out.println("""
-                        1->Last call duration
-                        2->All calls' duration
-                        3->Received calls' duration
-                        4->Dialled calls' duration
-                        5->Clear timers
-                        
-                        """);
-            case 6:
-                System.out.println("""
-                        1->Last call cost
-                        2->All calls' cost
-                        3->Clear counters
+                switch (showCallDuration) {
+                    case 5:
+                        System.out.println("""
+                                1->Last call duration
+                                2->All calls' duration
+                                3->Received calls' duration
+                                4->Dialled calls' duration
+                                5->Clear timers
+                                                        
+                                """);
                         break;
-                       
-                        """);
-            case 7:
-                System.out.println("""
-                        1->Call cost limit
-                        2->Show costs in
+                }
+                int showCallCosts = input.nextInt();
+                switch (showCallCosts) {
+                    case 6:
+                        System.out.println("""
+                                1->Last call cost
+                                2->All calls' cost
+                                3->Clear counters
+                                                                        
+                                                       
+                                """);
                         break;
-                        """);
+                }
+                int callCostSettings = input.nextInt();
+                switch (callCostSettings) {
+                    case 7:
+                        System.out.println("""
+                                1->Call cost limit
+                                2->Show costs in
+                                                                        
+                                """);
+                        break;
+                }
                 break;
         }
+
         switch (nokia3310) {
             case 5:
                 System.out.println("""
@@ -150,90 +174,114 @@ public class Phone {
                         7.Warning and game tones
                         8.Vibrating alert
                         9.Screensaver
-                        break;
+                                                        
                         """);
                 break;
-        }
-        switch (nokia3310) {
-            case 6:
-                System.out.println("""
-                        1.Call settings
-                        2.Phone settings
-                        3.Security settings
-                        4.Restore factory settings
-                                         
-                        """);
-                int callSettings = input.nextInt();
-            case 1:
-                System.out.println("""
-                        1->Automatic redial
-                        2->Speed dialing 
-                        3->Call waiting options
-                        4->Own number sending
-                        5->Phone line in use
-                        6->Automatic answer
-                        
-                        """);
-                int phoneSettings = input.nextInt();
-            case 2:
-                System.out.println("""
-                        1->Language
-                        2->Cell info display
-                        3->Welcome note
-                        4->Network selection
-                        5->Lights^2
-                        6->Confirm SIM service actions
-                            
-                        """);
-                int securitySettings = input.nextInt();
-            case 3:
-                System.out.println("""
-                        1->Pin code request
-                        2->Call barring Service
-                        3->Fixed dialing
-                        4->Closed user group
-                        5->Phone security
-                        6->Change access codes
-                        
-                        """);
-                break;
-        }
-        if (nokia3310 == 7) {
-            System.out.println("Call divert");
-        }
-        if (nokia3310 == 8) {
-            System.out.println("Games");
-        }
-        if (nokia3310 == 9) {
-            System.out.println("Calculator");
-        }
-        if (nokia3310 == 10) {
-            System.out.println("Reminders");
         }
 
-        switch (nokia3310) {
-            case 11:
-                System.out.println("""
-                        1.Alarm clock
-                        2.Clock settings
-                        3.Date settings
-                        4.Stopwatch
-                        5.Countdown timer
-                        6.Auto update of date and time
-                            
-                        """);
-                break;
-        }
-        if (nokia3310 == 12) {
-            System.out.println("Profiles");
-        }
-        if (nokia3310 == 13) {
-            System.out.println("Sim services^3");
+
+                switch (nokia3310) {
+                    case 6:
+                        System.out.println("""
+                                1.Call settings
+                                2.Phone settings
+                                3.Security settings
+                                4.Restore factory settings
+                                                 
+                                """);
+
+                        int callSettings = input.nextInt();
+                        switch (callSettings) {
+                            case 1:
+                                System.out.println("""
+                                        1->Automatic redial
+                                        2->Speed dialing 
+                                        3->Call waiting options
+                                        4->Own number sending
+                                        5->Phone line in use
+                                        6->Automatic answer
+                                                                
+                                        """);
+                        }
+                        int phoneSettings = input.nextInt();
+                        switch (phoneSettings) {
+                            case 2:
+                                System.out.println("""
+                                        1->Language
+                                        2->Cell info display
+                                        3->Welcome note
+                                        4->Network selection
+                                        5->Lights^2
+                                        6->Confirm SIM service actions
+                                            
+                                        """);
+                                break;
+                        }
+                        int securitySettings = input.nextInt();
+                        switch (securitySettings){
+                        case 3:
+                        System.out.println("""
+                                1->Pin code request
+                                2->Call barring Service
+                                3->Fixed dialing
+                                4->Closed user group
+                                5->Phone security
+                                6->Change access codes
+                                                        
+                                """);
+                        break;
+                }}
+                if (nokia3310 == 7) {
+                    System.out.println("""
+                                       Call divert
+                                       """);
+                }
+                if (nokia3310 == 8) {
+                    System.out.println("""
+                                       Games
+                                       """);
+                }
+                if (nokia3310 == 9) {
+                    System.out.println("""
+                                       Calculator
+                                       """);
+                }
+                if (nokia3310 == 10) {
+                    System.out.println("""
+                                       Reminders
+                                       """);
+
+                }
+
+
+                switch (nokia3310) {
+                    case 11:
+                        System.out.println("""
+                                1.Alarm clock
+                                2.Clock settings
+                                3.Date settings
+                                4.Stopwatch
+                                5.Countdown timer
+                                6.Auto update of date and time
+                                    
+                                """);
+                        break;
+                }
+                if (nokia3310 == 12) {
+                    System.out.println("""
+                                       Profiles
+                                       """);
+                }
+                if (nokia3310 == 13) {
+                    System.out.println("""
+                                       Sim services^3
+                                       """);
+                }
+
         }
 
     }
 
-}
 
 
 
