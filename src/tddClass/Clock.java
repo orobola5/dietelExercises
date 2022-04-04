@@ -41,8 +41,8 @@ public Clock(String name,int hour,int minute,int seconds){
         }
     }
 
-    public int getMinute() {
-        return minute;
+    public int getMinute(){
+    return minute;
     }
 
     public void setSeconds(int seconds) {

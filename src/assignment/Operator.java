@@ -14,11 +14,13 @@ public class Operator {
         int correctValue = 0;
         int wrongValue = 0;
 
+        int number = 1;
+        while ( number <= 11) {
+            int firstRandomValue = 1 +randomNumbers.nextInt(10);
+            int secondRandomValue =1 + randomNumbers.nextInt(10);
+            int operatorsNumber =  1 + randomNumbers.nextInt(4);
+            number++;
 
-        for (int number = 0; number <= 10; number++) {
-            int firstRandomValue = randomNumbers.nextInt(70);
-            int secondRandomValue = randomNumbers.nextInt(70);
-            int operatorsNumber = randomNumbers.nextInt(4);
             switch (operatorsNumber) {
                 case 0:
                     initialAnswer = firstRandomValue + secondRandomValue;
@@ -53,6 +55,7 @@ public class Operator {
 
 
                 case 2:
+
                     initialAnswer = firstRandomValue * secondRandomValue;
                     System.out.printf("%d * %d =", firstRandomValue, secondRandomValue);
                     userAnswer = input.nextInt();
@@ -66,8 +69,9 @@ public class Operator {
                     break;
 
                 case 3:
+
+                    initialAnswer = firstRandomValue / secondRandomValue;
                     if (firstRandomValue > secondRandomValue) {
-                        initialAnswer = firstRandomValue / secondRandomValue;
                         System.out.printf("%d / %d =", firstRandomValue, secondRandomValue);
                         userAnswer = input.nextInt();
                     } else {
@@ -95,5 +99,4 @@ public class Operator {
 
 
         }
-    }
-
+}
