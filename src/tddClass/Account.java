@@ -3,6 +3,16 @@ package tddClass;
 public class Account {
 
     private int balance;
+    private String name;
+
+    public Account(String accountNumber, String accountName, String lastName, int pin) {
+        name = accountName;
+
+    }
+
+    public void setAccountName(String name) {
+        this.name =name ;
+    }
 
     public void deposit(int amount) {
         if (amount < 0)
@@ -23,5 +33,9 @@ public class Account {
         {
             balance = amount + balance;
         }
+    }
+
+    public String getAccountName() {
+        return name;
     }
 }

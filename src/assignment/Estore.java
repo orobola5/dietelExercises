@@ -5,6 +5,7 @@ public class Estore {
     private static String sellers;
 
     public static void main(String[] args) {
+        Customer Tolani = new Customer();
 
 
     }

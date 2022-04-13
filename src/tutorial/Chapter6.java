@@ -29,7 +29,7 @@ public class Chapter6 {
         Chapter6.name = name;
     }
     public int setName(String name, int age){
-       return  0;
+       return 0;
     }
 
     public int getAge() {

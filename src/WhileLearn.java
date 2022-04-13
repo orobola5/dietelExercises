@@ -23,7 +23,7 @@ public class WhileLearn<isMinor, n> {
 //        }
 //    }
 
-    public static void main(String[] args) {
+
 
 //        int age = 20;
 //        boolean isMinor = age > 31;
@@ -38,7 +38,7 @@ public class WhileLearn<isMinor, n> {
 //        } else {
 //            System.out.println("try");
 //        }
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.println("enter number");
         int i = input.nextInt();
         if (i % 2 == 0) {
@@ -90,9 +90,39 @@ public class WhileLearn<isMinor, n> {
                 monthString = "Invalid month";
                 break;
         }
-        System.out.println(monthString);
+        System.out.println(monthString);*/
+public static void main(String[] args) {
+    int position = calculatedHighScorePosition(1500);
+    displayHighScorePosition("love",position);
+
+     position = calculatedHighScorePosition(900);
+    displayHighScorePosition("gilbert",position);
+
+     position = calculatedHighScorePosition(400);
+    displayHighScorePosition("Bob",position);
+
+    position = calculatedHighScorePosition(50);
+    displayHighScorePosition("Grace",position);
+
+}
+public static void displayHighScorePosition(String playerName,int position){
+
+System.out.println(playerName +"  " + "managed to get into position"+ "  "+position+ "  "+"on the high score table");
+
+}
+public  static int calculatedHighScorePosition(int playerScore){
+    if(playerScore > 1000){
+        return 1;
+    }else if(playerScore >500 && playerScore <1000){
+        return 2;
+    }else if(playerScore >100 && playerScore <500) {
+        return 3;
+    }else
+    {
+        return 4;
     }
 
+}
 
 
 

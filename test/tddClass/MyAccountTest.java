@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class MyAccountTest {
     @Test
     public void testThatAccountCanBeCreated(){
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         assertNotNull(loveAccount);
 
     }
     @Test
     public void testThatAccountHaveAName(){
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.setName("Olanrewaju Love");
         //check that(assertion)
@@ -26,7 +26,7 @@ public class MyAccountTest {
     @Test
     public void testThatAccountHaveANumber() {
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.setNumber("0128052096");
         //check that(assertion)
@@ -35,7 +35,7 @@ public class MyAccountTest {
     @Test
     public void testThatAccountCanDeposit(){
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.deposit(500);
         //check that(assertion)
@@ -46,7 +46,7 @@ public class MyAccountTest {
     @Test
     public void testThatAccountCanDepositMultipleTimes(){
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.deposit(500);
         loveAccount.deposit(500);
@@ -60,7 +60,7 @@ public class MyAccountTest {
     @DisplayName("Test That Negative Deposit Will Not work")
     public void testThatNegativeDepositWillNotWork() {
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.deposit(500);
         loveAccount.deposit(-500);
@@ -72,7 +72,7 @@ public class MyAccountTest {
     @Test
     public void testThatWithdrawalWillWork() {
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.deposit(1000);
         loveAccount.withdraw(500);
@@ -82,7 +82,7 @@ public class MyAccountTest {
     @Test
     public void testThatWeCanWithdrawalMultipleTimes() {
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.deposit(10000);
         loveAccount.withdraw(500);
@@ -96,7 +96,7 @@ public class MyAccountTest {
     @DisplayName("Test That Negative Withdrawal Will Not work")
     public void testThatNegativeWithdrawalWillNotWork() {
         //given that
-        MyAccount loveAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
         //when(action)
         loveAccount.deposit(200);
         loveAccount.withdraw(-1000);
@@ -111,9 +111,9 @@ public class MyAccountTest {
     @Test
     public void testThatTransferWillWork() {
         //given that
-        MyAccount loveAccount = new MyAccount();
-        MyAccount kelAccount = new MyAccount();
-        MyAccount peaceAccount = new MyAccount();
+        MyAccount loveAccount = new MyAccount("olanrewaju love",2000,"1234");
+        MyAccount kelAccount = new MyAccount("devis kelvin",0,"2345");
+        MyAccount peaceAccount = new MyAccount("olanrewaju peace",200,"4545");
         //when(action)
         loveAccount.deposit(2000);
         loveAccount.transfer(500, kelAccount);

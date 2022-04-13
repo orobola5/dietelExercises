@@ -24,9 +24,7 @@ public class EBanking {
 
     public void deposit(int amountToDeposit) {
 
-            this.balance += amountToDeposit;
-
-
+        this.balance += amountToDeposit;
     }
 
     public int getBalance(String password) {

@@ -5,19 +5,24 @@ public class MyAccount {
     private int amount;
     private String number;
 
+    public MyAccount(String name, int amount, String number) {
+        this.name = name;
+        this.amount = amount;
+        this.number = number;
+    }
 
     public void setName(String acName) {
         this.name = acName;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
     public void deposit(int amountToDeposit) {
-        if(amountToDeposit>=0){
+        if (amountToDeposit >= 0) {
             this.amount += amountToDeposit;
-        }else{
+        } else {
             System.out.println("You can not deposit negative amount");
         }
     }
@@ -30,6 +35,7 @@ public class MyAccount {
         }
 
     }
+
     public int getAmount() {
         return amount;
     }
@@ -46,4 +52,14 @@ public class MyAccount {
     public String getNumber() {
         return number;
     }
+@Override
+    public String toString() {
+        String toReturn = String.format("""
+                Account Name:    %s
+                Account Number:  %s
+                Balance:         %d
+                """, name,number,amount);
+        return toReturn;
+    }
+
 }

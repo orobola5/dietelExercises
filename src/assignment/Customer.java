@@ -8,4 +8,14 @@ public class Customer {
     private int password;
     private int phoneNumber;
 
+    public int getPassword() {
+        return password;
+    }
+
+    public void setPassword(int password) {
+        if (this.password==password){
+            System.out.println("access accep");
+        }
+
+    }
 }
