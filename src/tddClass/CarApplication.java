@@ -1,3 +1,5 @@
+package tddClass;
+
 public class CarApplication {
 
     private String model;

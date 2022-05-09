@@ -1,4 +1,4 @@
-package tutorial;
+package Chapter8oop;
 
 class Calculator {
     public int add(int i, int j) {

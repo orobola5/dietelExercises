@@ -109,9 +109,9 @@ public class Atm {
             runApp();
 
 
-            System.out.println();
-            System.out.println();
-            runApp();
+//            System.out.println();
+//            System.out.println();
+//            runApp();
 
         }
     }

@@ -1,8 +1,10 @@
+package tutorial;
+
 import java.util.Scanner;
 
 public class LearnMain {
     public static void main(String[] args) {
-//        Learn doSomething = new Learn("Love",12,12.7);
+//        tutorial.Learn doSomething = new tutorial.Learn("Love",12,12.7);
 //        System.out.println(doSomething.getName()+ " "+ doSomething.getAge()+
 //                " "+doSomething.getHeight());
 //        doSomething.setName("Love");

@@ -1,3 +1,5 @@
+package tutorial;
+
 import java.util.Scanner;
 
 public class WhileLearn<isMinor, n> {
