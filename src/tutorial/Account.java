@@ -22,7 +22,7 @@ public class Account {
         return accountNumber;
     }
 
-    public void getAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

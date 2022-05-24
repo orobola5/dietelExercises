@@ -28,7 +28,8 @@ public class EBanking {
     }
 
     public int getBalance(String password) {
-        if(password.equals(this.password))return balance;
+        if(password.equals(this.password))
+            return balance;
         return 0;
     }
 

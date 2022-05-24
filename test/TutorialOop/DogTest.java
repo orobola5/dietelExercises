@@ -1,5 +1,6 @@
-package Chapter8oop;
+package TutorialOop;
 
+import TutorialOop.Dog;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

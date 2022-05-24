@@ -1,5 +1,7 @@
-package Chapter8oop;
+package TutorialOop;
 
+import TutorialOop.Employee.Employee;
+import TutorialOop.Employee.PartTimeEmployee;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

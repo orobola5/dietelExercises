@@ -4,56 +4,59 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GasMileage {
-    private int miles;
-    private int gallon;
+    private double miles;
+    private double gallon;
+    ArrayList<Double> tripArrayList;
 
-    ArrayList<GasMileage> gasMileages;
-
-    public GasMileage(int miles, int gallon) {
+    public GasMileage(double miles, double gallon) {
         this.miles = miles;
         this.gallon = gallon;
-        gasMileages = new ArrayList<>();
+        tripArrayList = new ArrayList<Double>();
     }
+
 
     public static void main(String[] args) {
-
-
+    Scanner input = new Scanner(System.in);
     }
 
-    public int getMiles() {
+    public double getMiles() {
         return miles;
     }
 
-    public void setMiles(int miles) {
+    public void setMiles(double miles) {
         this.miles = miles;
     }
 
-    public int getGallon() {
+    public double getGallon() {
         return gallon;
     }
 
-    public void setGallon(int gallon) {
+    public void setGallon(double gallon) {
         this.gallon = gallon;
     }
 
-    public int calculateMilesPerGallon() {
+    public void displayMilesPerGallon() {
+        System.out.printf("the gallon %f per miles %f in each Trip is %f%n:", getGallon(), getMiles(), calculateMilesPerGallon());
+    }
+    public double calculateMilesPerGallon(){
 
-        return getMiles() / getGallon();
+       double value =Trip.calculateMilesPerGallon(miles, gallon);
+       return value  ;
     }
 
-    public void displayMilesPerGallon(int miles, int gallon) {
-        System.out.printf("the miles %d per gallon %d in each trips is %d%n:", miles, gallon, calculateMilesPerGallon());
+
+    public  void combinedMilesPerGallon(double miles,double gallon) {
+        tripArrayList.add(calculateMilesPerGallon());
+
     }
-}
-//    public int combinedMilesPerGallon(int miles,int gallon) {
-//        for (int i = 0; i < miles; i++) {
-//            for (int j = 0; j < gallon; j++) {
-//                if (miles == -1) {
-//                    System.out.println();
-//                }
-//
-//            }
-//        }
-//
-//    }
-//}
+
+    public void tripArrayList(double miles,double gallon) {
+
+
+
+        }
+
+    }
+
+
+

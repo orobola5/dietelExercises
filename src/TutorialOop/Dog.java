@@ -1,4 +1,4 @@
-package Chapter8oop;
+package TutorialOop;
 
 public class Dog {
     private String name;

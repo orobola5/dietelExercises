@@ -1,5 +1,6 @@
 package Chapter9;
 
+import Chapter9.Diary.Entry;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

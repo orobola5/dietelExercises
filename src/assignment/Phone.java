@@ -72,7 +72,7 @@ public class Phone {
                 int messageSettings = input.nextInt();
                 switch (messageSettings) {
                     case 7:
-                        System.out.println("""
+                       System.out.println("""
                                 1->Set1^2
                                 2->common^3
                                                         
@@ -195,7 +195,7 @@ public class Phone {
                             case 1:
                                 System.out.println("""
                                         1->Automatic redial
-                                        2->Speed dialing 
+                                        2->Speed dialing
                                         3->Call waiting options
                                         4->Own number sending
                                         5->Phone line in use

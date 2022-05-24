@@ -1,5 +1,7 @@
 package Chapter9;
 
+import Chapter9.Diary.Diary;
+import Chapter9.Diary.Entry;
 import org.junit.jupiter.api.Test;
 import tddClass.MyAccount;
 

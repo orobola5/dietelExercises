@@ -10,6 +10,7 @@ public class GasMileageTest {
 
     @Test
     void setUp() {
+
         mine = new GasMileage(1000, 50);
     }
 
@@ -31,42 +32,30 @@ public class GasMileageTest {
     void testTheGallon() {
         GasMileage mine = new GasMileage(1000, 50);
         mine.setGallon(100);
-
-
+        assertEquals(100, mine.getGallon());
     }
 
-    @Test
-    public void testForTheMilesDrivenAndGallonUsedForEachTrip() {
+    @Test public void testForCalcMilesDrivenAndGallonUsedForEachTrip() {
         GasMileage mine = new GasMileage(1000, 50);
-        assertEquals(1000, mine.getMiles());
-        assertEquals(50, mine.getGallon());
-        assertEquals(20.0, mine.calculateMilesPerGallon());
+        mine.setGallon(500);
+        mine.setMiles(1000);
+        mine.displayMilesPerGallon();
+        assertEquals(0.5, mine.calculateMilesPerGallon());
 
     }
 
-//    @Test
-//    public void testForTheMilesDrivenAndGallonUsedForAllTrips() {
-//         mine.setMiles(500);
-//         mine.setGallon(50);
-//        assertEquals(10.0, mine.calculateMilesPerGallon());
-//        assertEquals(10, mine.combinedMilesPerGallon());
-//
-//    }
-}
-//    @Test
-//    public void testForCombinedMilesDrivenAndGallonUsedForAllTrips() {
-//
-//        mine.displayMilesPerGallon(1000, 50);
-//        mine.displayMilesPerGallon(2000, 50);
-//        assertEquals(60, mine.sum());
-//
-//    }
-//    @Test
+    @Test public void testForCombinedMilesDrivenAndGallonUsedForAllTrip() {
+        GasMileage mine = new GasMileage(1000, 50);
+        mine.tripArrayList(1000,50);
+        mine.tripArrayList(1500,500);
+        mine.tripArrayList(10000,500);
+        mine.tripArrayList(600,300);
+        mine.tripArrayList(1000,50);
+        mine.combinedMilesPerGallon(14100.0,1400.0);
+        assertEquals(10.07,mine.calculateMilesPerGallon());
+
+    }
 //    public void testForAverageMilesDrivenAndGallonUsedForAllTrips() {
-//
-//        mine.displayMilesPerGallon(1000, 20);
-//        mine.displayMilesPerGallon(1000,20);
-//   ;
-//        assertEquals(1.0,mine.average());
-//    }*/
 //    }
+
+}
