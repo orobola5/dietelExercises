@@ -11,7 +11,7 @@ public class School_Member {
         this.age = age;
         this.address = address;
         this.membersId = membersId;
-        System.out.println("A school member was initialized");
+//        System.out.println("A");
 
     }
 

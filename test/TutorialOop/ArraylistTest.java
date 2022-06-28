@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ArraylistTest {
 
     @Test public void addTest() {
-        List list = new Arraylist();
+        List list = new Arraylist<Number>();
         list.add("Boxers for boyfriend");
         list.add("Clothes for boyfriend");
         list.add("Shoes for boyfriend");
@@ -18,7 +18,7 @@ class ArraylistTest {
 
     }
     @Test public void addAndGetTest() {
-        List list = new Arraylist();
+        List list = new Arraylist<Number>();
         list.add("Boxers for boyfriend");
         assertEquals("Boxers for boyfriend",list.get(0));
         list.add("Clothes for boyfriend");
@@ -28,7 +28,7 @@ class ArraylistTest {
     }
 
     @Test public void removeTest() {
-        List list = new Arraylist();
+        List list = new Arraylist<Number>();
         list.add("String in a guitar");
         list.add("Clothes for boyfriend");
         list.add("Shoes for boyfriend");

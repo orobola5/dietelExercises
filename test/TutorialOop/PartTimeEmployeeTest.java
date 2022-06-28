@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PartTimeEmployeeTest {
     @Test
     void testThatEmployeeHasAName(){
-        Employee employee = new Employee("chibuzo","0803");
+        Employee<String, Number> employee = new Employee<String, Number>("chibuzo","0803");
         assertEquals("chibuzo",employee.getName());
         assertEquals("0803",employee.getNumber());
     }

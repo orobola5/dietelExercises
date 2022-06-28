@@ -1,7 +1,7 @@
 package TutorialOop.Employee;
 
 //THE SUBCLASS(It is related to the superclass and inherit all the attribute and method)
-public class PartTimeEmployee extends Employee {
+public class PartTimeEmployee extends Employee<String, Number> {
     private double hourlyPay;
 
     public PartTimeEmployee(String name, String number, double hourlyPay) {

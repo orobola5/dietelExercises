@@ -5,7 +5,7 @@ package TutorialOop.Employee;
 * and add our new attribute...they will share the same attribute and methods among themselves
 * the new class we are working on will inherit the old class attribute and behaviour,but also have their own attribute and behaviour */
 //This is the Superclass
-public class Employee{
+public class Employee<S, I extends Number> {
     private String name;
     private  String number;
 
