@@ -1,4 +1,4 @@
-package ClassWork;
+package BunmiDataStructureClassWork;
 
 import org.junit.jupiter.api.Test;
 

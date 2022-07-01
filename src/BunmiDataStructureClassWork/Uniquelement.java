@@ -1,4 +1,4 @@
-package ClassWork;
+package BunmiDataStructureClassWork;
 
 import java.util.HashMap;
 import java.util.LinkedHashSet;

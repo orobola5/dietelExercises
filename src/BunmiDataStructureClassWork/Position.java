@@ -1,4 +1,4 @@
-package ClassWork;
+package BunmiDataStructureClassWork;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Position {
 
         int[] arr = {2, 3, 4, 5, 6};
 
-        findPosition(arr, 4);
+        findPosition(arr, 0);
     }
 
 
