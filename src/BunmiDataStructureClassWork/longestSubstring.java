@@ -39,6 +39,8 @@ public class longestSubstring {
             if (chars[c]>1){return false;}
         }
         return  true;
+
+
     }
 
 
