@@ -21,9 +21,9 @@ public class Main {
                 .collect(Collectors.toList());
                 sorted.forEach(System.out::println);
         //All match
-       boolean allMatch = people.stream()
-                .allMatch(person -> person.getAge()>);
-        System.out.println(allMatch);
+//       boolean allMatch = people.stream()
+//                .allMatch();
+//        System.out.println(allMatch);
         //Any match
         //None match
         //Max
